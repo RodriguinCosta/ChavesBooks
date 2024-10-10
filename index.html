@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChavesBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">O diário do Chaves</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Livros mais vendidos</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Redes Sociais</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Suporte</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Formas de pagamento</a>
+        </li>
+      </ul>
+      <img src="img/Chapéu CH.png" alt="Logo Chapéu Chaves" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Chaves</b>Books</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">O diário do Chaves</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Livros mais vendidos</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Redes Sociais</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Suporte</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Formas de pagamento</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu entretenimento!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Nossos Livros</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/O melhor livro do Chaves.png"
+              alt="Livro sobre o diário do Chaves"></div>
+          <div class="swiper-slide"><img src="img/Líder em vendas CH.png"
+              alt="Livro sobre a história oficial ilustrada de Chaves"></div>
+          <div class="swiper-slide"><img src="img/Sem querer querendo -  livro.png" alt="Livro sobre a história e criação Chaves">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Curiosidades  Chaves.png" alt="Livro Curiosidades Chaves" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Seu madruga e personagens.png" alt="Livro sobre Seu Madruga e trajetória" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Livro professor girafales.png" alt="Livro do Professor Girafales" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Quem foi Chaves?</h3>
+            <h2 class="descrição__titulo-livro">Conheça o menino do barril</h2>
+            <p class="descrição__texto">
+              um menino pobre que passa sua infância em uma pequena vila ao lado de seus amigos, Chiquinha e Kiko.
+            </p>
+          </div>
+          <img src="img/Chaves.png" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais do Elenco Chespirito</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/Curiosidades  Chaves.png"
+              alt="Livro Curiosidades Chaves"></div>
+          <div class="swiper-slide"><img src="img/Seu madruga e personagens.png" alt="Livro sobre Seu Madruga e trajetória">
+          </div>
+          <div class="swiper-slide"><img src="img/Livro professor girafales.png" alt="Livro do Professor Girafales">
+          </div>
+          <div class="swiper-slide"><img src="img/O melhor livro do Chaves.png" alt="Livro sobre o diário do Chaves"></div>
+          <div class="swiper-slide"><img src="img/Líder em vendas CH.png" alt="Livro sobre a história oficial ilustrada de Chaves"></div>
+          <div class="swiper-slide"><img src="img/Sem querer querendo -  livro.png" alt="Livro sobre a história e criação Chaves"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Criador do grupo Chespirito</h3>
+            <h2 class="descrição__titulo-livro">Roberto Gómes Bolaños</h2>
+            <p class="descrição__texto">Foi um ator, comediante, músico, cineasta, produtor, escritor, 
+              roteirista e filantropo mexicano.
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="img/Roberto Bolaños.png" class="descrição__imagem">
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">Mais Vendidos</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">O Diário do Chaves</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link"> Sem Querer Querendo: Memórias</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Seu Madruga: Vila e Obra</a>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de e-books, novos livros, promoções e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="          Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Chespirito</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Contato</li>
+      <li class="lista-rodapé__item">
+        <img src="img/e-mail.png" alt="Logo do e-mail" />
+        <a href="#" class="lista-rodapé__link">E-mail</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/WhatsApp.png" alt="Logo do WhatsApp" />
+        <a href="#" class="lista-rodapé__link">WhatsApp</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Redes Sociais</li>
+      <li class="lista-rodapé__item">
+        <img src="img/instagram.png" alt="Logo do instagram" />
+        <a href="#" class="lista-rodapé__link">Instagram</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/facebook.png" alt="Logo do Facebook" />
+        <a href="#" class="lista-rodapé__link">Facebook</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/TikTok.png" alt="Logo do TikTok" />
+        <a href="#" class="lista-rodapé__link">TikTok</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/YouTube.png" alt="Logo do YouTube" />
+        <a href="#" class="lista-rodapé__link">YouTube</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Linkedin.png" alt="Logo do LinkedIn" />
+        <a href="#" class="lista-rodapé__link">LinkedIn</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/X - logo.png" alt="Logo do X" />
+        <a href="#" class="lista-rodapé__link">X</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Suporte.png" alt="Logo Suporte" />
+        <a href="#" class="lista-rodapé__link">Suporte</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Institucional</li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Política de segurança</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Política de Privacidade</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">
+          Atendimento ao Cliente
+          </a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Formas de Pagemento</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Dúvidas frequentes</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">Proteção de dados no Brasil
+        </a>
+      </li>
+      <li class="lista-rodapé__item">
+        <a href="#" class="lista-rodapé__link">
+          Site feito por: 𝑹𝒐𝒅𝒓𝒊𝒈𝒐 𝑪𝒐𝒔𝒕𝒂</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
